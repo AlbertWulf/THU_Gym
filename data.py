@@ -10,13 +10,20 @@ item_id = {
 # a='%CE%E2%C1%D6%B7%E5'
 # # 转成bytes
 
-# b=a.encode('gbk').decode('gbk')
-# c= "吴林峰"
-# import binascii
-# s = b'\xc4\xe3\xba\xc3'
-# s = b'\xce\xe2\xc1\xd6\xb7\xe5'
-# print(s.decode('GBK')) # 你好
-# s2='c4e3bac3'
-# print(binascii.unhexlify(s2)) # b'\xc4\xe3\xba\xc3'
-# # 解码成GBK字符编码
-# print(binascii.unhexlify(s2).decode('GBK')) # 你好
+# import requests
+# import sys
+# import io
+# import datetime
+# import schedule
+# import time
+# from apscheduler.schedulers.blocking import BlockingScheduler
+# from datetime import datetime
+# from data import gymnasium_id,item_id
+# import pandas as pd
+# #booking对应的单列id.csv
+# id_csv = pd.read_csv('id.csv',usecols=['id'],encoding='gbk')
+# id_arr = id_csv.values[:,0]
+# id2_csv = pd.read_csv('id2.csv',usecols=['id1','id2'],encoding='gbk')
+# id2_arr = id2_csv.values
+
+# print(id2_arr.shape)
